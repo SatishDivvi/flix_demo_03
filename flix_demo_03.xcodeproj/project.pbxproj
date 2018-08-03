@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D709F5C52114E86B00FDB003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709F5C42114E86B00FDB003 /* AppDelegate.swift */; };
-		D709F5C72114E86C00FDB003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709F5C62114E86C00FDB003 /* ViewController.swift */; };
 		D709F5CA2114E86C00FDB003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D709F5C82114E86C00FDB003 /* Main.storyboard */; };
 		D709F5CC2114E8BA00FDB003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D709F5CB2114E8BA00FDB003 /* Assets.xcassets */; };
 		D709F5CF2114E8BA00FDB003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D709F5CD2114E8BA00FDB003 /* LaunchScreen.storyboard */; };
 		D709F5DA2114E8BC00FDB003 /* flix_demo_03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709F5D92114E8BC00FDB003 /* flix_demo_03Tests.swift */; };
 		D709F5E52114E8BF00FDB003 /* flix_demo_03UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709F5E42114E8BF00FDB003 /* flix_demo_03UITests.swift */; };
+		D709F5F32114FB1D00FDB003 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709F5F22114FB1D00FDB003 /* NowPlayingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		D709F5C12114E86B00FDB003 /* flix_demo_03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix_demo_03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D709F5C42114E86B00FDB003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D709F5C62114E86C00FDB003 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D709F5C92114E86C00FDB003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D709F5CB2114E8BA00FDB003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D709F5CE2114E8BA00FDB003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		D709F5E02114E8BD00FDB003 /* flix_demo_03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flix_demo_03UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D709F5E42114E8BF00FDB003 /* flix_demo_03UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flix_demo_03UITests.swift; sourceTree = "<group>"; };
 		D709F5E62114E8C000FDB003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D709F5F22114FB1D00FDB003 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		D709F5C32114E86B00FDB003 /* flix_demo_03 */ = {
 			isa = PBXGroup;
 			children = (
+				D709F5F22114FB1D00FDB003 /* NowPlayingViewController.swift */,
 				D709F5C42114E86B00FDB003 /* AppDelegate.swift */,
-				D709F5C62114E86C00FDB003 /* ViewController.swift */,
 				D709F5C82114E86C00FDB003 /* Main.storyboard */,
 				D709F5CB2114E8BA00FDB003 /* Assets.xcassets */,
 				D709F5CD2114E8BA00FDB003 /* LaunchScreen.storyboard */,
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D709F5C72114E86C00FDB003 /* ViewController.swift in Sources */,
+				D709F5F32114FB1D00FDB003 /* NowPlayingViewController.swift in Sources */,
 				D709F5C52114E86B00FDB003 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
