@@ -15,18 +15,22 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var tableView: UITableView!
     
     var movies: [[String: Any]] = []
-    
+    var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let refreshControl = UIRefreshControl()
-        
-        
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(NowPlayingViewController.didPulltoRefresh(_:)), for: .valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
         tableView.delegate = self
         tableView.dataSource = self
         fetchMovies()
         
+    }
+    
+    @objc func didPulltoRefresh(_ refreshControl: UIRefreshControl) {
+        fetchMovies()
     }
     
     func fetchMovies() {
@@ -43,7 +47,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
                 let movies = dataDictionary["results"] as! [[String: Any]]
                 self.movies = movies
                 self.tableView.reloadData()
-                
+                self.refreshControl.endRefreshing()
             }
         }
         // resume the task
