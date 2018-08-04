@@ -11,8 +11,11 @@ import AlamofireImage
 
 class NowPlayingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    
+    // outlet for Tableview
     @IBOutlet weak var tableView: UITableView!
+    
+    // outlet for activity indicator
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     var movies: [[String: Any]] = []
     var refreshControl: UIRefreshControl!
@@ -34,7 +37,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func fetchMovies() {
-        
+        indicator.startAnimating()
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
@@ -48,6 +51,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
                 self.movies = movies
                 self.tableView.reloadData()
                 self.refreshControl.endRefreshing()
+                self.indicator.stopAnimating()
             }
         }
         // resume the task
@@ -72,8 +76,8 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
         let posterURL = URL(string: baseURLString + posterPathString)!
         
         cell.posterImageView.af_setImage(withURL: posterURL)
-        
         return cell
+        
     }
     
     
