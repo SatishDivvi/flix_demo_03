@@ -37,7 +37,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/36VH5l5.gif' title='Flix App Demo' width='' alt='Flix App Demo' />
+<img src='https://i.imgur.com/vVLcdXD.gif' title='Flix App Demo' width='' alt='Flix App Demo' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
