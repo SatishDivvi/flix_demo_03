@@ -13,12 +13,24 @@ class SuperHeroViewController: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
     var movies: [[String: Any]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.dataSource = self
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = layout.minimumInteritemSpacing
+        let cellsPerLine: CGFloat = 2
+        let interItemSpacingTotal = layout.minimumInteritemSpacing * (cellsPerLine - 1)
+        let width = collectionView.frame.size.width  / cellsPerLine - interItemSpacingTotal / cellsPerLine
+        layout.itemSize = CGSize(width: width, height: width * 3 / 2)
+        
+        
         fetchMovies()
     }
     
@@ -40,7 +52,7 @@ class SuperHeroViewController: UIViewController, UICollectionViewDataSource {
     }
     
     func fetchMovies() {
-        //indicator.startAnimating()
+        indicator.startAnimating()
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
@@ -54,7 +66,7 @@ class SuperHeroViewController: UIViewController, UICollectionViewDataSource {
                 self.movies = movies
                 self.collectionView.reloadData()
                 //self.refreshControl.endRefreshing()
-                //self.indicator.stopAnimating()
+                self.indicator.stopAnimating()
             }
         }
         // resume the task
