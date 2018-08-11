@@ -10,7 +10,7 @@ import UIKit
 import AlamofireImage
 
 class NowPlayingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     // outlet for Tableview
     @IBOutlet weak var tableView: UITableView!
     
@@ -56,7 +56,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
         }
         // resume the task
         task.resume()
-
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -80,15 +80,26 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
         
     }
     
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell) {
+            let movie = movies[indexPath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.movie = movie
 
+        }
+        
+        
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-   
-
+    
+    
+    
 }
