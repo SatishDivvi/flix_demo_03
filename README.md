@@ -96,7 +96,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
     
 Here's a walkthrough of implemented user stories:
     
-<img src='https://i.imgur.com/MrsWoit.gif' title='Flix App - Part 2' width='' alt='Video Walkthrough of DetailsView and GridView of SuperHero tab of Flix App' />
+<img src='https://i.imgur.com/MrsWoit.gif' title='Flix App - Part 2' alt='Video Walkthrough of DetailsView and GridView of SuperHero tab of Flix App' />
     
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
     
