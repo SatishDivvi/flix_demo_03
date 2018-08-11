@@ -224,6 +224,9 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="posterImageView" destination="TnC-Eo-0Ac" id="yHw-Hr-Tuf"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
