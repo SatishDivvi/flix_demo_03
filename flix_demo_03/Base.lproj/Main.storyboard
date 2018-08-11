@@ -132,7 +132,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission Impossible" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVP-fN-5eD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVP-fN-5eD">
                                 <rect key="frame" x="28" y="441" width="331" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -143,6 +143,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Nbh-hk-e0p"/>
                     </view>
+                    <connections>
+                        <outlet property="backDropImageView" destination="R7U-ei-mRw" id="70M-hI-Y8I"/>
+                        <outlet property="overviewLabel" destination="iVP-fN-5eD" id="uPj-Hg-tsJ"/>
+                        <outlet property="posterImageView" destination="SWi-Ov-HNB" id="blp-kU-Aai"/>
+                        <outlet property="releaseDateLabel" destination="u95-Mm-yo8" id="chj-pO-qQL"/>
+                        <outlet property="titleLabel" destination="9tk-xh-gJc" id="EDa-fx-SBF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWJ-qV-iiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
