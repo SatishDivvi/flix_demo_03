@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="208.80000000000001" y="-821.73913043478262"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="87T-Mz-W5L">
             <objects>
-                <viewController id="T9d-oB-Usc" sceneMemberID="viewController">
+                <viewController id="T9d-oB-Usc" customClass="DetailViewController" customModule="flix_demo_03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XPv-So-AKv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
