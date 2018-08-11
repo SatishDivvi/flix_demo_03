@@ -129,13 +129,13 @@
 		D709F5C32114E86B00FDB003 /* flix_demo_03 */ = {
 			isa = PBXGroup;
 			children = (
-				D709F5F22114FB1D00FDB003 /* NowPlayingViewController.swift */,
+				D78D230A211E6FC00039B9E9 /* Views */,
+				D78D2309211E6F700039B9E9 /* ViewControllers */,
 				D709F5C42114E86B00FDB003 /* AppDelegate.swift */,
 				D709F5C82114E86C00FDB003 /* Main.storyboard */,
 				D709F5CB2114E8BA00FDB003 /* Assets.xcassets */,
 				D709F5CD2114E8BA00FDB003 /* LaunchScreen.storyboard */,
 				D709F5D02114E8BA00FDB003 /* Info.plist */,
-				D709F5F42115329900FDB003 /* MovieCell.swift */,
 			);
 			path = flix_demo_03;
 			sourceTree = "<group>";
@@ -156,6 +156,22 @@
 				D709F5E62114E8C000FDB003 /* Info.plist */,
 			);
 			path = flix_demo_03UITests;
+			sourceTree = "<group>";
+		};
+		D78D2309211E6F700039B9E9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D709F5F22114FB1D00FDB003 /* NowPlayingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D78D230A211E6FC00039B9E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D709F5F42115329900FDB003 /* MovieCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E8278CC0B7AAB314387DCE6B /* Frameworks */ = {
