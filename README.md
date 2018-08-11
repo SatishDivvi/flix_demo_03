@@ -96,7 +96,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/vVLcdXD.gif' title='Flix App Demo' width='50%' alt='Flix App Demo' />
+<img src='https://i.imgur.com/vVLcdXD.gif' title='Flix App Part-2' width='50%' alt='Details & SuperHero Grid View' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
