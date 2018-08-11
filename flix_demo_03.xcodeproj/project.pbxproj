@@ -18,6 +18,7 @@
 		D709F5E52114E8BF00FDB003 /* flix_demo_03UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709F5E42114E8BF00FDB003 /* flix_demo_03UITests.swift */; };
 		D709F5F32114FB1D00FDB003 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709F5F22114FB1D00FDB003 /* NowPlayingViewController.swift */; };
 		D709F5F52115329900FDB003 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709F5F42115329900FDB003 /* MovieCell.swift */; };
+		D78D230C211E710A0039B9E9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D230B211E710A0039B9E9 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		D709F5E62114E8C000FDB003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D709F5F22114FB1D00FDB003 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		D709F5F42115329900FDB003 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		D78D230B211E710A0039B9E9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F84FD417E1110904AC9E88EB /* Pods_flix_demo_03Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flix_demo_03Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				D709F5F22114FB1D00FDB003 /* NowPlayingViewController.swift */,
+				D78D230B211E710A0039B9E9 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				D709F5F32114FB1D00FDB003 /* NowPlayingViewController.swift in Sources */,
 				D709F5C52114E86B00FDB003 /* AppDelegate.swift in Sources */,
 				D709F5F52115329900FDB003 /* MovieCell.swift in Sources */,
+				D78D230C211E710A0039B9E9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
